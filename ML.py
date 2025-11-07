@@ -455,10 +455,23 @@ def sql_predict() -> Any:
         "probabilidad_retraso": prob,
         "recomendacion": recomendacion,
     })
+from flask import send_from_directory
+import os
+
+# --- servir el archivo HTML principal (frontend) ---
+@app.route('/')
+def servir_index():
+    return send_from_directory(os.getcwd(), 'index.html')
+
+# --- servir archivos estáticos (CSS, JS, imágenes, etc.) ---
+@app.route('/<path:filename>')
+def servir_archivos(filename):
+    return send_from_directory(os.getcwd(), filename)
 
 
 if __name__ == '__main__':
-    port = int(os.environ.get('PORT', '5000'))
-    app.run(host='0.0.0.0', port=port, debug=True)
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)), debug=True)
+
+
 
 
