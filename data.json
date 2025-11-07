@@ -1,0 +1,312 @@
+{
+  "projects": [
+    {
+      "id": "54717486-f5d4-472f-bed5-524c452bfaee",
+      "name": "Desarrollo de API",
+      "objectives": "Creación de API para proyecto de ML",
+      "startDate": "2025-08-20",
+      "endDate": "2026-01-31",
+      "owners": [
+        "Nombre generico",
+        "nombre generico"
+      ],
+      "resources": "Python",
+      "status": "en_revision",
+      "areaId": "a1",
+      "createdAt": "2025-10-25T01:30:40.787886Z",
+      "updatedAt": "2025-10-25T01:30:40.787886Z"
+    }
+  ],
+  "areas": [
+    {
+      "id": "a1",
+      "name": "Desarrollo",
+      "description": "Ingeniería y desarrollo de productos"
+    },
+    {
+      "id": "a2",
+      "name": "Recursos Humanos",
+      "description": "Gestión de talento"
+    },
+    {
+      "id": "a3",
+      "name": "Operaciones",
+      "description": "Operación y logística"
+    }
+  ],
+  "teams": [],
+  "sprints": [],
+  "kpis": [
+    {
+      "id": "b77eea3b-12e9-4961-a214-889af65468f3",
+      "areaId": "a1",
+      "name": "kpi_velocidad",
+      "value": 35.24,
+      "sprint": 1,
+      "date": "2025-10-07T20:34:15.190653Z"
+    },
+    {
+      "id": "c6e8912b-cb00-46e1-a136-59aea3c9c0cc",
+      "areaId": "a1",
+      "name": "kpi_velocidad",
+      "value": 41.02,
+      "sprint": 2,
+      "date": "2025-10-07T20:34:15.190653Z"
+    },
+    {
+      "id": "5e1e04cb-5724-492a-bc20-dd6677b3e7a4",
+      "areaId": "a1",
+      "name": "kpi_velocidad",
+      "value": 46.07,
+      "sprint": 3,
+      "date": "2025-10-07T20:34:15.190653Z"
+    },
+    {
+      "id": "88bf5cd1-220b-4680-bd47-9e16d2367095",
+      "areaId": "a1",
+      "name": "kpi_velocidad",
+      "value": 49.52,
+      "sprint": 4,
+      "date": "2025-10-07T20:34:15.190653Z"
+    },
+    {
+      "id": "518bceac-7585-49c6-9b48-8af163470c95",
+      "areaId": "a1",
+      "name": "kpi_velocidad",
+      "value": 55.79,
+      "sprint": 5,
+      "date": "2025-10-07T20:34:15.190653Z"
+    },
+    {
+      "id": "19abe63c-446d-4364-9baa-3c5e2e1c98a4",
+      "areaId": "a1",
+      "name": "kpi_velocidad",
+      "value": 60.43,
+      "sprint": 6,
+      "date": "2025-10-07T20:34:15.190653Z"
+    },
+    {
+      "id": "9992ece3-3608-4297-a9ca-8c2c58516009",
+      "areaId": "a1",
+      "name": "kpi_velocidad",
+      "value": 66.37,
+      "sprint": 7,
+      "date": "2025-10-07T20:34:15.190653Z"
+    },
+    {
+      "id": "e93221ba-1d5b-48c1-8e91-cac2f6b2c5d1",
+      "areaId": "a1",
+      "name": "kpi_velocidad",
+      "value": 70.16,
+      "sprint": 8,
+      "date": "2025-10-07T20:34:15.190653Z"
+    },
+    {
+      "id": "0d88e414-145e-4c8c-8373-1a164bdc7611",
+      "areaId": "a1",
+      "name": "kpi_velocidad",
+      "value": 73.15,
+      "sprint": 9,
+      "date": "2025-10-07T20:34:15.190653Z"
+    },
+    {
+      "id": "0dce2f9e-884f-4094-a750-4156d5d73579",
+      "areaId": "a1",
+      "name": "kpi_velocidad",
+      "value": 79.19,
+      "sprint": 10,
+      "date": "2025-10-07T20:34:15.190653Z"
+    },
+    {
+      "id": "01663c7f-c38d-457c-9cda-aab9e0696660",
+      "areaId": "a1",
+      "name": "kpi_velocidad",
+      "value": 84.41,
+      "sprint": 11,
+      "date": "2025-10-07T20:34:15.190653Z"
+    },
+    {
+      "id": "3d4711e9-81a3-4e83-8c5b-687860889720",
+      "areaId": "a1",
+      "name": "kpi_velocidad",
+      "value": 91.01,
+      "sprint": 12,
+      "date": "2025-10-07T20:34:15.190653Z"
+    },
+    {
+      "id": "bc001d16-4a9d-4fd4-8374-99097495b981",
+      "areaId": "a1",
+      "name": "kpi_velocidad",
+      "value": 36.18,
+      "sprint": 1,
+      "date": "2025-10-07T20:41:15.700979Z"
+    },
+    {
+      "id": "f6d03d62-68ac-47df-81f3-f6eec1603a17",
+      "areaId": "a1",
+      "name": "kpi_velocidad",
+      "value": 41.91,
+      "sprint": 2,
+      "date": "2025-10-07T20:41:15.700979Z"
+    },
+    {
+      "id": "7d8c4327-dc30-4de3-89c1-341ef946b9f3",
+      "areaId": "a1",
+      "name": "kpi_velocidad",
+      "value": 45.55,
+      "sprint": 3,
+      "date": "2025-10-07T20:41:15.700979Z"
+    },
+    {
+      "id": "e592e048-1ecf-43a4-96d6-60b6066f10e5",
+      "areaId": "a1",
+      "name": "kpi_velocidad",
+      "value": 50.77,
+      "sprint": 4,
+      "date": "2025-10-07T20:41:15.700979Z"
+    },
+    {
+      "id": "597f2dc1-1a09-443c-990a-0bf24f46a7b4",
+      "areaId": "a1",
+      "name": "kpi_velocidad",
+      "value": 56.36,
+      "sprint": 5,
+      "date": "2025-10-07T20:41:15.700979Z"
+    },
+    {
+      "id": "b63f443c-fe90-44f2-ad01-7a98b2ff7845",
+      "areaId": "a1",
+      "name": "kpi_velocidad",
+      "value": 59.48,
+      "sprint": 6,
+      "date": "2025-10-07T20:41:15.700979Z"
+    },
+    {
+      "id": "dd3f574b-9dde-474a-b68f-fb786c0d65e6",
+      "areaId": "a1",
+      "name": "kpi_velocidad",
+      "value": 66.56,
+      "sprint": 7,
+      "date": "2025-10-07T20:41:15.700979Z"
+    },
+    {
+      "id": "f5f48d87-2fb2-430f-bf6b-dc999c5c291b",
+      "areaId": "a1",
+      "name": "kpi_velocidad",
+      "value": 70.82,
+      "sprint": 8,
+      "date": "2025-10-07T20:41:15.700979Z"
+    },
+    {
+      "id": "5a7e93cc-8181-4f2e-bd2e-ab6a19223fbe",
+      "areaId": "a1",
+      "name": "kpi_velocidad",
+      "value": 76.36,
+      "sprint": 9,
+      "date": "2025-10-07T20:41:15.700979Z"
+    },
+    {
+      "id": "58973895-571c-42c9-9df8-2ee50026d261",
+      "areaId": "a1",
+      "name": "kpi_velocidad",
+      "value": 80.52,
+      "sprint": 10,
+      "date": "2025-10-07T20:41:15.700979Z"
+    },
+    {
+      "id": "590466fa-e302-4f3b-8329-83dbf661243e",
+      "areaId": "a1",
+      "name": "kpi_velocidad",
+      "value": 84.51,
+      "sprint": 11,
+      "date": "2025-10-07T20:41:15.700979Z"
+    },
+    {
+      "id": "da6fac3c-b4e5-4270-b541-150a3f33f542",
+      "areaId": "a1",
+      "name": "kpi_velocidad",
+      "value": 88.24,
+      "sprint": 12,
+      "date": "2025-10-07T20:41:15.700979Z"
+    }
+  ],
+  "suggestions": [
+    {
+      "id": "73a37486-9dc2-43a9-aaaf-d216e3e36052",
+      "authorId": "53b40c3e-75a4-4d38-b376-09b973f8c859",
+      "authorRole": "scrum_master",
+      "areaId": "a1",
+      "type": "sugerencia",
+      "title": "Hola",
+      "content": "No",
+      "status": "en_revision_lider",
+      "createdAt": "2025-10-07T19:51:30.801310Z",
+      "updatedAt": "2025-10-07T19:51:30.801310Z"
+    }
+  ],
+  "users": [
+    {
+      "email": "demo@empresa.com",
+      "password": "demo123",
+      "role": "scrum_master",
+      "areaId": "a1",
+      "name": "Usuario Demo",
+      "position": "Scrum Master",
+      "seniorityYears": 2,
+      "phone": "+52 55 0000 0000"
+    },
+    {
+      "email": "lider@empresa.com",
+      "password": "lider123",
+      "role": "lider_area",
+      "areaId": "a2",
+      "name": "Líder RH",
+      "position": "Líder de Área",
+      "seniorityYears": 5,
+      "phone": "+52 55 1111 1111"
+    },
+    {
+      "email": "empleado@empresa.com",
+      "password": "empleado123",
+      "role": "employee",
+      "areaId": "a3",
+      "name": "Empleado Ops",
+      "position": "Analista",
+      "seniorityYears": 1,
+      "phone": "+52 55 2222 2222"
+    }
+  ],
+  "profiles": [
+    {
+      "id": "53b40c3e-75a4-4d38-b376-09b973f8c859",
+      "name": "Usuario Demo",
+      "photoUrl": "",
+      "position": "Scrum Master",
+      "seniorityYears": 2,
+      "areaId": "a1",
+      "role": "scrum_master",
+      "email": "demo@empresa.com",
+      "phone": "+52 55 0000 0000",
+      "activities": [],
+      "calendar": [],
+      "team": []
+    }
+  ],
+  "work_methods": {
+    "public": {
+      "description": "Marco ágil basado en Scrum y prácticas Lean."
+    },
+    "private": {}
+  },
+  "ml_model": {
+    "feature_keys": [
+      "value"
+    ],
+    "target_key": "value",
+    "coef": [
+      0.9999999999999997
+    ],
+    "intercept": 2.1316282072803006e-14,
+    "trainedAt": "2025-10-07T20:41:16.774317Z"
+  }
+}

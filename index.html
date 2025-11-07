@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plataforma Ágil Empresarial</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="app-header">
+        <div class="brand">
+            <div class="logo">Ágil</div>
+            <div class="title">Plataforma de Transformación Ágil</div>
+        </div>
+        <nav class="tabs">
+            <button data-tab="inicio" class="tab active">Inicio</button>
+            <button data-tab="areas" class="tab">Áreas</button>
+            <button data-tab="metodologia" class="tab">Metodología</button>
+            <button data-tab="aportaciones" class="tab">Aportaciones</button>
+            <button data-tab="perfil" class="tab">Perfil</button>
+        </nav>
+        <div class="session">
+            <input type="text" id="globalSearch" placeholder="Buscar..." />
+            <input type="email" id="loginEmail" placeholder="correo@empresa.com" />
+            <input type="password" id="loginPassword" placeholder="contraseña (demo)" />
+            <button id="loginBtn">Acceder</button>
+            <button id="logoutBtn" style="display:none">Cerrar sesión</button>
+        </div>
+    </header>
+
+    <main id="view">
+        <!-- Views rendered by script.js -->
+    </main>
+
+    <footer class="app-footer">
+        <div class="footer-col">
+            <h4>Contacto</h4>
+            <p>EMPRESA GENERICA</p>
+            <p>Ciudad de México, México</p>
+            <p>Tel: GENERICO</p>
+        </div>
+        <div class="footer-col">
+            <h4>Modelo de ML</h4>
+            <p>Regresión lineal para predicción de KPIs de agilidad. Entrenamiento con datos históricos de sprints/KPIs.</p>
+        </div>
+        <div class="footer-col rights">
+            <p>© <span id="year"></span> Plataforma Ágil Empresarial. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

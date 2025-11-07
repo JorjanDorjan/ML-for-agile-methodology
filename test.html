@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Áreas</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .tab { padding: 10px; margin: 5px; background: #f0f0f0; border: none; cursor: pointer; }
+        .tab.active { background: #007bff; color: white; }
+        .card { border: 1px solid #ddd; padding: 15px; margin: 10px 0; border-radius: 5px; }
+        .btn { padding: 8px 16px; background: #28a745; color: white; border: none; border-radius: 3px; cursor: pointer; }
+        .muted { color: #666; }
+    </style>
+</head>
+<body>
+    <h1>Test de Funcionalidad de Áreas</h1>
+    
+    <div>
+        <button class="tab active" data-tab="inicio">Inicio</button>
+        <button class="tab" data-tab="areas">Áreas</button>
+        <button class="tab" data-tab="metodologia">Metodología</button>
+    </div>
+    
+    <div id="view">
+        <!-- Contenido se carga aquí -->
+    </div>
+    
+    <div>
+        <h3>Debug Info:</h3>
+        <div id="debug"></div>
+    </div>
+
+    <script>
+        const API_BASE = "http://localhost:5000/api";
+        
+        function debug(msg) {
+            const debugDiv = document.getElementById('debug');
+            debugDiv.innerHTML += '<div>' + new Date().toLocaleTimeString() + ': ' + msg + '</div>';
+            console.log(msg);
+        }
+        
+        function setActive(tab) {
+            document.querySelectorAll('.tab').forEach(b => b.classList.toggle('active', b.dataset.tab === tab));
+        }
+        
+        function view(html) {
+            document.getElementById('view').innerHTML = html;
+        }
+        
+        async function navigate(tab) {
+            debug('Navegando a: ' + tab);
+            setActive(tab);
+            if (tab === 'inicio') return renderInicio();
+            if (tab === 'areas') return renderAreas();
+            if (tab === 'metodologia') return renderMetodologia();
+        }
+        
+        function renderInicio() {
+            view('<div class="card"><h3>Página de Inicio</h3><p>Esta es la página de inicio.</p></div>');
+        }
+        
+        async function renderAreas() {
+            debug('Iniciando renderAreas...');
+            try {
+                debug('Haciendo fetch a /api/areas...');
+                const areasRes = await fetch(`${API_BASE}/areas`);
+                debug('Respuesta áreas: ' + areasRes.status);
+                
+                if (!areasRes.ok) {
+                    throw new Error(`Error cargando áreas: ${areasRes.status}`);
+                }
+                
+                const areas = await areasRes.json();
+                debug('Áreas cargadas: ' + JSON.stringify(areas));
+                
+                const options = areas.map(a => `<option value="${a.id}">${a.name}</option>`).join('');
+                
+                view(`
+                    <div class="card">
+                        <h3>Áreas</h3>
+                        <label>Seleccionar área:</label>
+                        <select id="areaSelect">${options}</select>
+                        <div id="areaInfo"></div>
+                    </div>
+                `);
+                
+                // Agregar event listener al select
+                const select = document.getElementById('areaSelect');
+                if (select) {
+                    select.addEventListener('change', (e) => {
+                        const areaId = e.target.value;
+                        const area = areas.find(a => a.id === areaId);
+                        document.getElementById('areaInfo').innerHTML = `
+                            <div class="card">
+                                <h4>${area.name}</h4>
+                                <p class="muted">${area.description}</p>
+                            </div>
+                        `;
+                    });
+                    // Trigger inicial
+                    select.dispatchEvent(new Event('change'));
+                }
+                
+            } catch (error) {
+                debug('Error en renderAreas: ' + error.message);
+                view(`
+                    <div class="card">
+                        <h3>Error cargando áreas</h3>
+                        <p>Error: ${error.message}</p>
+                        <button class="btn" onclick="renderAreas()">Reintentar</button>
+                    </div>
+                `);
+            }
+        }
+        
+        function renderMetodologia() {
+            view('<div class="card"><h3>Metodología</h3><p>Esta es la página de metodología.</p></div>');
+        }
+        
+        // Inicializar
+        document.addEventListener('DOMContentLoaded', () => {
+            debug('DOM cargado');
+            const tabs = document.querySelectorAll('.tab');
+            debug('Tabs encontrados: ' + tabs.length);
+            tabs.forEach(t => {
+                t.addEventListener('click', () => {
+                    debug('Click en tab: ' + t.dataset.tab);
+                    navigate(t.dataset.tab);
+                });
+            });
+            navigate('inicio');
+        });
+    </script>
+</body>
+</html>
