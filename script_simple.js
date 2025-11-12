@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:5000/api";
+const API_BASE = "https://ml-for-agile-methodology.onrender.com";
 
 const state = {
   token: null,
@@ -493,3 +493,4 @@ async function renderPerfil() {
   </div>
   `);
 }
+
