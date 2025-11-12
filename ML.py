@@ -79,6 +79,8 @@ def _mysql_connect():
             user="avnadmin",
             password="AVNS_U1xwNhM7GkIvQAdsD7B",
             database="agileboard",
+            port=17096,
+            ssl_ca="ca.pem"
         )
     except Exception as e:
         raise RuntimeError(f"Error conectando a MySQL: {e}")
