@@ -75,9 +75,9 @@ def _now_iso() -> str:
 def _mysql_connect():
     try:
         return mysql.connector.connect(
-            host="localhost",
-            user="root",
-            password="",
+            host="mysql-304b4705-jurgenzabala-1b33.g.aivencloud.com",
+            user="avnadmin",
+            password="AVNS_U1xwNhM7GkIvQAdsD7B",
             database="agileboard",
         )
     except Exception as e:
