@@ -1,4 +1,4 @@
-const API_BASE = "https://ml-for-agile-methodology.onrender.com";
+const API_BASE = "https://ml-for-agile-methodology.onrender.com/api";
 
 const state = {
   token: null,
