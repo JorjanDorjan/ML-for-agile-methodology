@@ -464,6 +464,9 @@ import os
 @app.route('/')
 def servir_index():
     return send_from_directory(os.getcwd(), 'index.html')
+@app.route('/admin')
+def servir_admin():
+    return send_from_directory(os.getcwd(), 'test.html')
 
 # --- servir archivos estáticos (CSS, JS, imágenes, etc.) ---
 @app.route('/<path:filename>')
